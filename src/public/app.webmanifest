@@ -1,0 +1,24 @@
+{
+    "id": "pemadam-kebakaran-pwa-1",
+    "start_url": "./index.html",
+    "name": "Pemadam Kelaparan Apps",
+    "short_name": "Pemadam Apps",
+    "description": "Rekomendasi Pemadam Kelaparan Terbaik",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#444736",
+    "icons": [
+        {
+        "src":"/icons/android-chrome-192x192.png",
+        "sizes":"192x192",
+        "type":"image/png",
+        "purpose" : "any"
+        },
+        {
+        "src":"/icons/android-chrome-512x512.png",
+        "sizes":"512x512",
+        "type":"image/png",
+        "purpose" : "any"
+        }
+            ]
+  }
