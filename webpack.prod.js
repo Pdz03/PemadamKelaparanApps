@@ -1,6 +1,5 @@
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
-const path = require('path');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 module.exports = merge(common, {
@@ -27,7 +26,7 @@ module.exports = merge(common, {
         swDest: './sw.bundle.js',
         runtimeCaching: [
           {
-            urlPattern: new RegExp('^https://restaurant-api.dicoding.dev/'),
+            urlPattern: '^https://restaurant-api.dicoding.dev/',
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'Pemadam Kelaparan V1',
