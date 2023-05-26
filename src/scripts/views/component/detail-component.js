@@ -44,7 +44,7 @@ class DetailComponent extends HTMLElement {
 
         <div class="reviews__item">
         <div class="review-photo-profile">
-        <img class="lazyload" data-src="./images/user/default.jpg" alt="consumer photo profile" crossorigin="anonymous">
+        <img class="lazyload" data-src="https://i.ibb.co/Zh4SvhQ/default.jpg" alt="consumer photo profile" crossorigin="anonymous">
         </div>
         <div class="review-content">
           <h3 class="reviews__name">${customerReview.name}</h2>
