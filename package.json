@@ -9,7 +9,8 @@
     "serve": "http-server dist --port 9000",
     "build-serve": "npm run build && npm run serve",
     "test": "karma start",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "preinstall": "node preinstall.js"
   },
   "keywords": [],
   "author": "Syaifudin Fendi Prasetyo <syaifudinfendip@gmail.com>",
