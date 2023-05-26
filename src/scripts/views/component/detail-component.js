@@ -44,7 +44,7 @@ class DetailComponent extends HTMLElement {
 
         <div class="reviews__item">
         <div class="review-photo-profile">
-        <img src="./images/user/default.jpg" alt="consumer photo profile" crossorigin="anonymous">
+        <img class="lazyload" data-src="./images/user/default.jpg" alt="consumer photo profile" crossorigin="anonymous">
         </div>
         <div class="review-content">
           <h3 class="reviews__name">${customerReview.name}</h2>
@@ -59,7 +59,7 @@ class DetailComponent extends HTMLElement {
     this.innerHTML = `
             <div id="notif-favorite-container" class="notif-favorite-container"></div>
             <article>
-                <img src="${CONFIG.BASE_IMAGE_URL_LARGE + this._data.pictureId}" class="detail-thumbnail" alt="${this._data.name}" crossorigin="anonymous">
+                <img data-src="${CONFIG.BASE_IMAGE_URL_LARGE + this._data.pictureId}" class="detail-thumbnail lazyload" alt="${this._data.name}" crossorigin="anonymous">
                 <div id="likeButtonContainer"></div>
                 <div class="detail-content">
                     <h1 class="detail-title">${this._data.name}</h1>

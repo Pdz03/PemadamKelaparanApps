@@ -2,6 +2,8 @@ import 'regenerator-runtime';
 import '../styles/base.scss';
 import './views/component/nav-bar';
 import './views/component/app-bar';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 
