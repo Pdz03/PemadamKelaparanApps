@@ -2,6 +2,7 @@
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -46,6 +47,10 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    }),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
       runtimeCaching: [

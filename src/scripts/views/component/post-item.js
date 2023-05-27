@@ -9,7 +9,7 @@ class PostItem extends HTMLElement {
   _render() {
     this.innerHTML = `
     <div class="list_item">
-    <img class="list_item_thumb lazyload" data-src="${CONFIG.BASE_IMAGE_URL_MEDIUM + this._data.pictureId}" title="${this._data.name}" crossorigin="anonymous">
+    <img class="list_item_thumb lazyload" data-src="${CONFIG.BASE_IMAGE_URL_MEDIUM + this._data.pictureId}" alt="${this._data.name}" title="${this._data.name}" crossorigin="anonymous">
     <div class="city" tabindex="0">${this._data.city}</div>
     <div class="list_item_content">
         <p class="list_item_rating" tabindex="0">

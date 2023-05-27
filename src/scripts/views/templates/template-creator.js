@@ -20,6 +20,27 @@ const createReviewTemplate = (reviews) => {
   return html;
 };
 
+const createSkeletonRestoTemplate = () => {
+  let template = '';
+
+  for (let i = 0; i < 20; i += 1) {
+    template += `
+    <post-item>
+    <div class="list_item">
+    <div class="skeleton" tabindex="0">Lorem ipsum</div>
+    <div class="list_item_content">
+        <h1 class="skeleton" tabindex="0">Lorem ipsum dolor sit</a></h1>
+        <div class="skeleton" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <hr>
+        <a class="skeleton" href="#" target="_blank">Lorem</a>
+    </div>
+  </div>
+</post-item>
+    `;
+  }
+  return template;
+};
+
 const createButtonLoaderTemplate = () => `
   <div class="btn-loader">
   </div>
@@ -89,4 +110,5 @@ export {
   createUnlikeRestaurantButtonTemplate,
   createSuccesFavoriteNotif,
   createRemoveFavoriteNotif,
+  createSkeletonRestoTemplate,
 };

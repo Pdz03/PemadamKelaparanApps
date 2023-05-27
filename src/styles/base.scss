@@ -220,7 +220,26 @@ body{
             min-height: 380px;
             width: 100%;
             text-align: center;
-            background-image: url('../public/images/heros/hero-image_2.jpg');
+            @media screen and (max-width: 499px) {
+            background-image: 
+            -webkit-image-set(
+              url('../public/images/heros/hero-image_2.jpg') 1x,
+            );
+            }
+            background-image: 
+            -webkit-image-set(
+              url('../public/images/heros/hero-image_2.jpg') 2x,
+            );
+            @media screen and (max-width: 499px) {
+            background-image: 
+            image-set(
+              url('../public/images/heros/hero-image_2.jpg') 1x,
+            );
+            };
+            background-image: 
+            image-set(
+              url('../public/images/heros/hero-image_2.jpg') 2x,
+            );
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -320,7 +339,7 @@ body{
                             display: grid;
                             grid-row-gap: 16px;
                             post-item{
-                        .list_item {
+                            .list_item {
                             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                             width: 100%;
                             border-radius: 5px;
@@ -330,6 +349,15 @@ body{
                                 width: 100%;
                                 max-height: 200px;
                             }
+                            .skeleton {
+                                user-select: none;
+                                background-color: #eeeeee;
+                                color: #eeeeee;
+                                top: 8px;
+                                left: 16px;
+                                border-radius: 5px;
+                                padding: 5px 10px 5px;
+                              }
                             .city {
                                 position: absolute;
                                 top: 8px;
@@ -346,6 +374,12 @@ body{
                                 }
 
                                 padding: 16px;
+                                .skeleton {
+                                    user-select: none;
+                                    background-color: #eeeeee;
+                                    color: #eeeeee;
+                                  }
+
                                 .list_item_rating {
                                     font-size: 12px;
                                     text-transform: uppercase;
