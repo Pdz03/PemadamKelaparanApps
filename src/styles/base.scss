@@ -220,26 +220,11 @@ body{
             min-height: 380px;
             width: 100%;
             text-align: center;
-            @media screen and (max-width: 499px) {
-            background-image: 
-            -webkit-image-set(
-              url('../public/images/heros/hero-image_2.jpg') 1x,
-            );
+            background-image: url('../public/images/heros/hero-image_2-small.jpg');
+ 
+            @media screen and (min-width: 499px) {
+                background-image: url('../public/images/heros/hero-image_2-large.jpg');
             }
-            background-image: 
-            -webkit-image-set(
-              url('../public/images/heros/hero-image_2.jpg') 2x,
-            );
-            @media screen and (max-width: 499px) {
-            background-image: 
-            image-set(
-              url('../public/images/heros/hero-image_2.jpg') 1x,
-            );
-            };
-            background-image: 
-            image-set(
-              url('../public/images/heros/hero-image_2.jpg') 2x,
-            );
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
