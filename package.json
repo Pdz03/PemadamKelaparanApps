@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && node sharp.js",
     "serve": "http-server dist --port 9000",
     "build-serve": "npm run build && npm run serve",
     "test": "karma start",
     "lint": "eslint ./src",
-    "e2e": "codeceptjs run --steps",
-    "build-image": "node sharp.js"
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "Syaifudin Fendi Prasetyo <syaifudinfendip@gmail.com>",
